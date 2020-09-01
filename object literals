@@ -1,0 +1,15 @@
+//object literals
+const bio = {
+    firstname: 'akki',
+    lastname: 'shady',
+    age: 21,
+    college : 'bhaskaracharya college of applied sciences',
+    hobby: ['football' , 'cricket' , 'pubg'],
+    adress:{
+        city: 'delhi',
+        district: 'north-west',
+    }
+}
+bio.email= 'akki.shady@gmail.com';
+console.log(bio);
+console.log(bio.firstname, bio.lastname, bio.age );
