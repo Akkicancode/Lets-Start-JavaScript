@@ -1,0 +1,13 @@
+// add or remove items  in array
+//pusn n pop
+const number = new Array (1,2,3,4,5);
+number[5]= 6;
+number.push(7);
+number.pop();
+console.log(number);
+
+//shift n unshift
+const colors =  ['red' , 'blue' ,'green'];
+colors.unshift('pink');
+colors.shift();
+console.log(colors);
