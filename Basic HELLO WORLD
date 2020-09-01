@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> java script </title>
+</head>
+<body>
+<script >
+alert ("hello world");
+
+</script>
+</body>
+<//html>
