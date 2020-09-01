@@ -1,0 +1,22 @@
+//Array of object
+const whattodo = [{
+    id: 1,
+    timing : 10,
+    todo: 'go to office',
+    iscompleted: true,
+    },
+    {
+        id: 2,
+        timing : 9,
+        todo: 'wake up',
+        iscompleted: true,
+        },
+        {
+            id: 3,
+            timing : 15,
+            todo: 'go to home',
+            iscompleted: false,
+            },
+        ]
+console.log(whattodo);
+console.log(whattodo[1].todo);
