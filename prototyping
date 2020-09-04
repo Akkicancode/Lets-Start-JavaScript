@@ -1,0 +1,16 @@
+//constructor function
+function information (firstname , lastname , age , dob){
+    this.firstname= firstname;
+    this.lastname= lastname;
+    this.age= age;
+    this.dob=  dob;
+ 
+}
+information.prototype.getFullName = function (){
+   return ` ${this.firstname} ${this.lastname}`;
+  
+}
+//instantiate usin new keyword
+const info = new information ('akki', 'shady' , 19, '18/10/1999');
+const info1 = new information ('vikki', 'malhotra' , 24 , '12/11/1996');
+console.log(info.getFullName());
