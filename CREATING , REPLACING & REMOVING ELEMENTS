@@ -1,0 +1,24 @@
+//CREATING ELEMENT
+let element = document.createElement('li');
+//ADDING CLASS , ID OR SETTING ATTRIBUTE
+ element.className = 'mylist';
+ element.id = 'classid';
+ element.setAttribute('title' , 'classtitle');
+ console.log(element);
+ //ADDING INNERHTML OR INNER TEXT
+ element.innerHTML= 'GRENADE';
+let text = document.createTextNode('GRENADE');
+element.append(text);
+let ul = document.querySelector('ul');
+ul.appendChild(element);
+console.log(ul);
+//CREATING ANOTHER ELEMENT FOR REPLACING/REMOVING
+let elem2 = document.createElement('h2');
+elem2.id= '1';
+elem2.class= 'ele';
+elem2.innerText= 'WELCOME TO WORLD OF FAU-G';
+element.replaceWith(elem2);
+let jj = document.getElementById('jj');
+jj.replaceChild(element , document.getElementById('2'));
+jj.removeChild(document.getElementById('3'));
+console.log(elem2);
