@@ -1,0 +1,10 @@
+document.getElementById('head').addEventListener(
+    'click' , function(e){
+        console.log("CLICKED ON HEADING");
+       console.log(e);
+       //location.href = '//www.ncoregames.com' ;
+      variable = e.target;
+       variable = e.target.classList;
+       console.log(variable);
+    }
+);
