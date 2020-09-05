@@ -1,0 +1,10 @@
+let elem2 = document.createElement('h2');
+elem2.id= '1';
+elem2.className = 'ele';
+elem2.innerText= 'WELCOME TO WORLD OF FAU-G';
+
+let pr = elem2.hasAttribute('class');
+elem2.getAttribute('class');
+elem2.setAttribute('title' , 'setat');
+elem2.removeAttribute('id');
+console.log(elem2 ,pr);
