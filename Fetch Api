@@ -1,0 +1,35 @@
+console.log("fetch api")
+ let mybtn = document.getElementById("mybtn");
+ url = "bb.txt"
+ const getData = ()=>{
+     fetch(url).then((response)=>{
+        console.log("first then");
+         return response.text();
+    
+     }).then((data)=>{
+         console.log(data);
+         console.log("second then");
+     })
+ }
+ console.log("before running get data");
+ getData();
+ console.log("after running get data");
+
+ const postData = ()=>{
+     url="http://dummy.restapiexample.com/api/v1/create";
+     data='{"name":"harglrshxksaxkgyia945","salary":"123","age":"23"}';
+     param = {
+         method : 'post',
+         header : {
+             "content-type" : "application/json"
+         },
+         body : data
+
+     }
+    fetch(url,param).then(response=>
+         response.text() ).then(data=>
+        console.log(data)
+        
+    )
+}
+postData()
